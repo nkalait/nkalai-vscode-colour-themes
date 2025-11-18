@@ -2,7 +2,7 @@
 node_modules/
 .vscode-test/
 *.vsix
-
+.open_vsx_token
 samples/
 
 # Local IDE and system files
