@@ -35,8 +35,9 @@ Both JSON theme files enable semantic highlighting, so language servers can appl
 - **Terminals:** Custom ANSI ramps ensure terminals match the editor background for both variants.
 
 ## Preview Assets
-- `media/preview-light.png` – screenshot of the light theme using `samples/example.js`.
-- `media/preview-dark.png` – screenshot of the dark theme using the same sample file for easy comparison.
+![nkalai Light screenshot showing soft parchment UI with earthy syntax accents](media/preview-light.png)
+
+![nkalai Dark screenshot showing charcoal UI with warm sand text and teal accents](media/preview-dark.png)
 
 ## Working on the Theme
 - Edit `themes/nkalai-light-color-theme.json` or `themes/nkalai-dark-color-theme.json`; both are plain JSON, so run `jq empty themes/*.json` (or rely on VS Code diagnostics) before relaunching.
