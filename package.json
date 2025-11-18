@@ -2,9 +2,10 @@
   "name": "nkalai-theme",
   "displayName": "nkalai Theme",
   "description": "Calm paired light/dark colour themes inspired by earthy neutrals and soft greens.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "nkalait",
   "license": "MIT",
+  "icon": "icon.png",
   "homepage": "https://github.com/nkalait/nkalai-vscode-colour-themes#readme",
   "repository": {
     "type": "git",
@@ -20,6 +21,14 @@
     "color": "#2F353B",
     "theme": "dark"
   },
+  "screenshots": [
+    {
+      "path": "media/preview-light.png"
+    },
+    {
+      "path": "media/preview-dark.png"
+    }
+  ],
   "categories": [
     "Themes"
   ],
