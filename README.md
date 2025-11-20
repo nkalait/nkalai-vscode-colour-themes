@@ -1,15 +1,20 @@
 # nkalai Theme
 
-Nkalai is a paired light/dark Visual Studio Code theme designed to stay gentle on your eyes during long editing sessions. Both variants share the same earthy greens, soft neutrals, and muted oranges so flipping between day and night modes never feels jarring.
+Nkalai is a paired light/dark Visual Studio Code theme designed to stay gentle on your eyes during long editing sessions. The latest update dims the light variant by ~4% and keeps both themes aligned around the same accent green, so flipping between day and night modes stays comfortable.
 
 I originally tweaked Wes Bos’ Cobalt2 theme for personal use, but after so many changes it felt right to publish the result as its own palette. This is a passion project rather than a professional product—I’m simply sharing it in case others find the colours helpful.
+
+## Preview
+![nkalai Dark screenshot showing charcoal UI with warm sand text and teal accents](media/preview-dark.png)
+
+![nkalai Light screenshot showing soft parchment UI with earthy syntax accents](media/preview-light.png)
 
 ## Theme Snapshot
 
 | Variant | Background | Foreground | Accent notes |
 | --- | --- | --- | --- |
-| **nkalai Light** | `#F5F2E8` (parchment) | `#2F291F` (deep brown) | Sage greens for cursors/selections, terracotta strings, muted violets for operators. |
-| **nkalai Dark** | `#2F353B` (charcoal) | `#D8D3C8` (warm sand) | Seafoam cursor/accents, amber numbers, rose-gold constants, teal UI highlights. |
+| **nkalai Light** | `#EFEBDE` (soft parchment, 4% dimmer) | `#2F291F` (deep brown) | Accent green `#77B58D` for cursor/selection/badges; strings deep evergreen `#0A7C48`; keywords warm gold `#B58F3A`; operators muted violet-grey `#6B5D6F`. |
+| **nkalai Dark** | `#1E2A30` (deep slate) | `#E6E2D9` (warm sand) | Accent green `#77B58D`; strings evergreen `#078A4F`; keywords soft gold `#E6C791`; operators dusty taupe `#B3A799`. |
 
 Both JSON theme files enable semantic highlighting, so language servers can apply the palette to semantic token classifications such as classes, parameters, and readonly properties.
 
@@ -30,14 +35,9 @@ Both JSON theme files enable semantic highlighting, so language servers can appl
 3. In your primary VS Code window, open the Extensions view → “⋯” menu → *Install from VSIX…* and select the generated `.vsix` file.
 
 ## Palette Highlights
-- **UI chrome:** Activity bar, status bar, tabs, and sidebars reuse the same green accents (`#8DC6AC` / `#7CB099`) to keep affordances consistent between themes.
-- **Syntax:** Strings lean warm (`#E09B61` dark, `#C98652` light), keywords stay neutral, and data keys receive bold tints for JSON-heavy workflows.
-- **Terminals:** Custom ANSI ramps ensure terminals match the editor background for both variants.
-
-## Preview Assets
-![nkalai Light screenshot showing soft parchment UI with earthy syntax accents](media/preview-light.png)
-
-![nkalai Dark screenshot showing charcoal UI with warm sand text and teal accents](media/preview-dark.png)
+- **UI chrome:** Shared accent green `#77B58D` across activity bar, status bar, tabs, badges, progress; light surfaces slightly dimmed neutrals (e.g., `#EEEAE2` panels) to reduce glare.
+- **Syntax:** Strings evergreen (`#078A4F` dark / `#0A7C48` light); keywords warm gold (`#E6C791` / `#B58F3A`); variables & properties copper (`#AB7E58` / `#855C3C`); data keys cool blue (`#6499B5` / `#4B7A97`); operators muted neutrals for subtle contrast.
+- **Terminals:** Backgrounds match the editors (`#1E2A30` dark / `#EFEBDE` light) with cursors and ANSI greens keyed to the accent for consistent inline work.
 
 ## Working on the Theme
 - Edit `themes/nkalai-light-color-theme.json` or `themes/nkalai-dark-color-theme.json`; both are plain JSON, so run `jq empty themes/*.json` (or rely on VS Code diagnostics) before relaunching.
