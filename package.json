@@ -1,8 +1,8 @@
 {
   "name": "nkalai-theme",
   "displayName": "nkalai Theme",
-  "description": "Calm paired light/dark colour themes inspired by earthy neutrals and soft greens.",
-  "version": "0.0.2",
+  "description": "Paired light/dark Visual Studio Code themes with a dimmed light variant and a shared #77B58D accent for balanced day/night use.",
+  "version": "0.0.3",
   "publisher": "nkalait",
   "license": "MIT",
   "icon": "icon.png",
@@ -17,8 +17,12 @@
   "engines": {
     "vscode": "^1.90.0"
   },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
   "galleryBanner": {
-    "color": "#2F353B",
+    "color": "#77B58D",
     "theme": "dark"
   },
   "screenshots": [
