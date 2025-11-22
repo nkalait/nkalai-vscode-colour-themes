@@ -2,7 +2,7 @@
   "name": "nkalai-theme",
   "displayName": "nkalai Theme",
   "description": "Paired light/dark Visual Studio Code themes with a dimmed light variant and a shared #77B58D accent for balanced day/night use.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "nkalait",
   "license": "MIT",
   "icon": "icon.png",
